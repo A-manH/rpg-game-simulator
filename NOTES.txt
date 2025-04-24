@@ -1,0 +1,36 @@
+Objective: RPG turned based game, with uniqe levels and character selection. Choose moves to attack and be carful of dying
+
+Classes: 
+    GameMaster
+        - Controls state of game by:
+            - Controling the "turn-based" mechanic
+        
+        - Stores data like:
+            - current monsters on the feild, 
+            - previous level data, 
+            - amount of levels passed, 
+            - current level, 
+
+    Character
+        - Create base class "Character" that will be used to implement another characters like Brute, Warrior, Ninja, Healer
+            - Character class will have emptry attributes of: health, defense, moveset
+            - Include methods "attack", "defend", "run"
+                -"attack": gets move from characters list of moves and returns its amount of damage and removes hp from enemy
+                -"defend": gets defense attribute and does enemy_attack - defense% (ex: 50dmg - 25%def = 37.5dmg delt [12.5 reduction])
+            - Sub classes that inheret Character class will fill in attributes
+
+        Enemy
+            - Class will inheret class Character
+            - Ene
+    
+    LevelGenerator
+        - Object of LevelGenerator controls a single level 
+        - Manages amount and type of enimies by variable "difficulty" thats to be passed
+        - Enimies generates are created from class "Enemy" then stored in a list 
+
+GameLoop:
+    Character Choosing:
+        - Player geets to choose from any of the starting characters
+        - Level is generated 
+            - If level completed, generate new level, progressing in difficulty
+        - Player health is checked: if health < 0 game over; reply or not
