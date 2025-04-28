@@ -1,4 +1,4 @@
-from classes.character import Character
+from character import Character
 
 class Theif(Character):
     def __init__(self):

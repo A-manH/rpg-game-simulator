@@ -1,4 +1,4 @@
-from classes.character import Character
+from character import Character
 import random
 
 character_list = ["Warrior", "Brute", "Ninja", "Healer"]
