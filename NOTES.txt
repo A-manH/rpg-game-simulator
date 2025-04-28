@@ -14,10 +14,10 @@ Classes:
     Character
         + Create base class "Character" that will be used to implement another characters like Brute, Warrior, Ninja, Healer
             + Character class will have emptry attributes of: health, defense, moveset
-            - Include methods "attack", "defend", "run"
-                -"attack": gets move from characters list of moves and returns its amount of damage and removes hp from enemy
-                -"defend": gets defense attribute and does enemy_attack - defense% (ex: 50dmg - 25%def = 37.5dmg delt [12.5 reduction])
-            - Sub classes that inheret Character class will fill in attributes
+            + Include methods "attack", "defend", "run"
+                +"attack": gets move from characters list of moves and returns its amount of damage and removes hp from enemy
+                +"defend": gets defense attribute and does enemy_attack - defense% (ex: 50dmg - 25%def = 37.5dmg delt [12.5 reduction])
+            + Sub classes that inheret Character class will fill in attributes
 
         Enemy
             - Class will inheret class Character

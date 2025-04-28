@@ -3,11 +3,14 @@ class Character:
         self.name = name
 
     def attack(self, move, enemy):
-        damage = self.moveset.get[move]
+        damage = self.moveset.get(move)
+        enemy.health -= damage
         return damage
 
-    def defend(self):
-        pass
+    def defend(self, damage):
+        defense = self.defense
+        self.health -= damage * (defense/100)
+
 
     def run(self):
         pass

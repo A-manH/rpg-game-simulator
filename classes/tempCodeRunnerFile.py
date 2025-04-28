@@ -1,3 +1,5 @@
 
-brute = Brute()
-print(brute.bark())
+def test():
+    return 1, 2
+
+print([*test()])
