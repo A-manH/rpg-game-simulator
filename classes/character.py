@@ -1,7 +1,6 @@
 class Character:
     def __init__(self, name=None):
         self.name = name
-        self.state = None
 
     def attack(self, move, enemy):
         damage = self.moveset.get(move)

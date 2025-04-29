@@ -11,6 +11,10 @@ Classes:
             - amount of levels passed, 
             - current level, 
 
+        - new_game(): initiates game and sets loop of levels
+            - Sets amount of enimies
+            - Difficulty of the enumes 
+
     Character
         + Create base class "Character" that will be used to implement another characters like Brute, Warrior, Ninja, Healer
             + Character class will have emptry attributes of: health, defense, moveset
