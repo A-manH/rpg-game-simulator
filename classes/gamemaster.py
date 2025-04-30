@@ -4,12 +4,12 @@ from level import Level
 class GameMaster:
     def __init__(self):
         self.current_monsters = 0
-        self.round = 1
-    
+        self.difficulty = 0
+        self.level_complete = True if len(self.new_level()) == 0 else False
+
     def new_level(self, difficulty):
-        round += 1
         level = Level()
-        level.new(difficulty)
+        return level.new(difficulty)
 
     def next_turn(self):
         pass

@@ -4,6 +4,8 @@ Classes:
     GameMaster
         - Controls state of game by:
             - Controling the "turn-based" mechanic
+            - Instancing new levels
+            - Manages current turn
         
         - Stores data like:
             - current monsters on the feild, 
